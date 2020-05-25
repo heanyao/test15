@@ -1,412 +1,517 @@
 <!DOCTYPE html>
 <html lang="zh">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Process</title>
-		<link rel="stylesheet" href="style/cases.css">
-		<link rel="stylesheet" type="text/css" href="style/bootstrap.css" />
-		<script src="style/bootstrap.js"></script>
-		<script src="style/jquery-1.8.3.min.js"></script>
-	</head>
-	<body>
-		<div class="j_main">
-			<div class="j_top_number">
-				<span>编号：</span><span>2324324234</span>
-			</div>
-			<div class="j_content j_row">
-				<div class="j_left">
-					<div class="top_title">
-						<p><span>诱导/欺诈</span><span>我要求珍爱网线下服务平台退款</span></p>
-						<div class="j_row">
-							<div class="top_head_img">
-								<img src="images/touxiang.png">
-							</div>
-							<div class="top_info j_col">
-								<p>林东东</p>
-								<p>
-									<span>2017-10-01 18:00</span>
-									<span><img  class="shoucang_img" src="images/sc_star.png" ><span>156</span></span>
-									<span><span class="glyphicon glyphicon-comment"></span><span>2</span></span>
-									<span><span class="glyphicon glyphicon-share"></span></span>
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="j_one_obj">
-						<div class="left_obj">
-							<p><span>投诉对象：</span><span>珍爱网PANGAN</span></p>
-							<p><span>投诉要求：</span><span>全额退款,快速处理</span></p>
-							<p><span>涉诉金额：</span><span style="font-size: 20px;font-weight: 500;">50,000 美金</span></p>
-							<p><span>投诉进度：</span><span style="color: #E93732;">处理中</span></p>
-						</div>
-					</div>
-					<div class="j_pinsheng">
-						<label>评审团</label>
-						<div class="j_row">
-							<div class="pin_item j_col">
-								<img src="images/touxiang.png">
-								<p>林东东</p>
-								<p>西南大虚法师兼国家安全局局长</p>
-							</div>
-						</div>
-					</div>
-					<div class="j_dangan">
-						<label>涉事企业档案</label>
-						<div class="j_row">
-							<div class="j_row">
-								<div class="j_dangan_lt">黑平台</div>
-								<div class="j_dangan_left">
-									<img src="images/img1.png">
-								</div>
-								<div class="j_dangan_right j_col">
-									<p><span>FinUK英国金融</span>
-										<span class="dangan_icon">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Process</title>
+    <link rel="stylesheet" href="style/cases.css">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.css" />
+    <script src="style/bootstrap.js"></script>
+    <script src="style/jquery-1.8.3.min.js"></script>
+    <!-- 新增 -->
+    <script src="style/d_jquery.page.js"></script>
+    <link rel="stylesheet" href="style/page.css">
+    <script src="style/q_emoji.js"></script>
+    <link rel="stylesheet" href="style/q_emoji.css">
+    <link rel="stylesheet" href="style/q_style.css">
+
+    <script src="style/url_tools.js"></script>
+    <script src="style/MiniDialog-es5.min.js"></script>
+</head>
+
+<body>
+    <input type="hidden" name="" id="case_id" value="2020051352100589" />
+    <div class="j_main">
+        <div class="j_top_number">
+            <span>编号：</span><span>2324324234</span>
+        </div>
+        <div class="j_content j_row">
+            <div class="j_left">
+                <div class="top_title">
+                    <p><span>诱导/欺诈</span><span>我要求珍爱网线下服务平台退款</span></p>
+                    <div class="j_row">
+                        <div class="top_head_img">
+                            <img src="images/touxiang.png">
+                        </div>
+                        <div class="top_info j_col">
+                            <p>林东东</p>
+                            <p>
+                                <span>2017-10-01 18:00</span>
+                                <span><img  class="shoucang_img" src="images/sc_star.png" ><span>156</span></span>
+                                <span><span class="glyphicon glyphicon-comment"></span><span>2</span></span>
+                                <span><span class="glyphicon glyphicon-share"></span></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="j_one_obj">
+                    <div class="left_obj">
+                        <p><span>投诉对象：</span><span>珍爱网PANGAN</span></p>
+                        <p><span>投诉要求：</span><span>全额退款,快速处理</span></p>
+                        <p><span>涉诉金额：</span><span style="font-size: 20px;font-weight: 500;">50,000 美金</span></p>
+                        <p><span>投诉进度：</span><span style="color: #E93732;">处理中</span></p>
+                    </div>
+                </div>
+                <div class="j_pinsheng">
+                    <label>评审团</label>
+                    <div class="j_row">
+                        <div class="pin_item j_col">
+                            <img src="images/touxiang.png">
+                            <p>林东东</p>
+                            <p>西南大虚法师兼国家安全局局长</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="j_dangan">
+                    <label>涉事企业档案</label>
+                    <div class="j_row">
+                        <div class="j_row">
+                            <div class="j_dangan_lt">黑平台</div>
+                            <div class="j_dangan_left">
+                                <img src="images/img1.png">
+                            </div>
+                            <div class="j_dangan_right j_col">
+                                <p><span>FinUK英国金融</span>
+                                    <span class="dangan_icon">
 											<span>口碑评分</span>
-											<span>1.35</span>
-										</span></p>
-									<p>黑平台 | 1年内 | 监管牌照存疑 | 非MT4/5软件</p>
-								</div>
-							</div>
-							<div class="j_dangan_r_btn j_col">
-								<img src="images/search.png">
-								<div>
-									查看<br>
-									更多详情
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="j_process_content">
-						<div class="j_process_img_box j_row">
-							<div class="j_process_head_img j_col">
-								<img src="images/touxiang.png">
-								<div class="sanjiao"></div>
-							</div>
-							<div class="j_process_info j_row">
-								<span>林东东</span>
-								<span>评价</span>
-								<span>2017-10-01 18:00</span>
-							</div>
-						</div>
-						<div class="j_process_content_box j_row">
-							<div class="j_left_line"></div>
-							<div class="j_process_stars">
-								<p><span>处理速度：</span>
-									<span>
+                                    <span>1.35</span>
+                                    </span>
+                                </p>
+                                <p>黑平台 | 1年内 | 监管牌照存疑 | 非MT4/5软件</p>
+                            </div>
+                        </div>
+                        <div class="j_dangan_r_btn j_col">
+                            <img src="images/search.png">
+                            <div>
+                                查看<br> 更多详情
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="j_process_content">
+                    <div class="j_process_img_box j_row">
+                        <div class="j_process_head_img j_col">
+                            <img src="images/touxiang.png">
+                            <div class="sanjiao"></div>
+                        </div>
+                        <div class="j_process_info j_row">
+                            <span>林东东</span>
+                            <span>评价</span>
+                            <span>2017-10-01 18:00</span>
+                        </div>
+                    </div>
+                    <div class="j_process_content_box j_row">
+                        <div class="j_left_line"></div>
+                        <div class="j_process_stars">
+                            <p><span>处理速度：</span>
+                                <span>
 										<img src="images/Star.png">
 										<img src="images/Star.png">
 										<img src="images/Star.png">
 										<img src="images/Half-star.png">
 										<img src="images/Star_2.png">
 									</span><span>3.5 星</span></p>
-								<p><span>服务态度：</span>
-									<span>
+                            <p><span>服务态度：</span>
+                                <span>
 										<img src="images/Star.png">
 										<img src="images/Star.png">
 										<img src="images/Star.png">
 										<img src="images/Half-star.png">
 										<img src="images/Star_2.png">
 									</span>
-									<span>3.5 星</span></p>
-								<p><span>满意度：</span>
-									<span>
+                                <span>3.5 星</span></p>
+                            <p><span>满意度：</span>
+                                <span>
 										<img src="images/Star.png">
 										<img src="images/Star.png">
 										<img src="images/Star.png">
 										<img src="images/Half-star.png">
 										<img src="images/Star_2.png">
 									</span>
-									<span>3.5 星</span></p>
-							</div>
-						</div>
+                                <span>3.5 星</span></p>
+                        </div>
+                    </div>
 
-						<div class="j_process_img_box j_row">
-							<div class="j_process_head_img j_col">
-								<img src="images/touxiang.png">
-								<div class="sanjiao"></div>
-							</div>
-							<div class="j_process_info j_row">
-								<span>林东东</span>
-								<span>发起投诉</span>
-								<span>2017-10-01 18:00</span>
-							</div>
-						</div>
-						<div class="j_process_content_box j_row">
-							<div class="j_left_line"></div>
-							<div class="j_sketch">段落示意：蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
-								蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
-								蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
-							</div>
-						</div>
-						<div class="j_process_img_box j_row">
-							<div class="j_process_head_img j_col">
-								<img src="images/touxiang.png">
-								<div class="shengping">评</div>
-								<!-- 小三角 -->
-								<div class="sanjiao"></div>
-							</div>
-							<div class="j_process_info j_row">
-								<span>林东东</span>
-								<span>评审回复</span>
-								<span>2017-10-01 18:00</span>
-							</div>
-						</div>
-						<div class="j_process_content_box j_row">
-							<!-- 左边竖线 -->
-							<div class="j_left_line"></div>
-							<div class="j_col">
-								<div class="j_sketch">段落示意：蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
-									蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
-									蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
-								</div>
-								<div class="j_process_c_img j_row">
-									<img src="images/test_img1.png" alt="">
-									<img src="images/test_img1.png" alt="">
-									<img src="images/test_img1.png" alt="">
-									<img src="images/test_img1.png" alt="">
-								</div>
-							</div>
+                    <div class="j_process_img_box j_row">
+                        <div class="j_process_head_img j_col">
+                            <img src="images/touxiang.png">
+                            <div class="sanjiao"></div>
+                        </div>
+                        <div class="j_process_info j_row">
+                            <span>林东东</span>
+                            <span>发起投诉</span>
+                            <span>2017-10-01 18:00</span>
+                        </div>
+                    </div>
+                    <div class="j_process_content_box j_row">
+                        <div class="j_left_line"></div>
+                        <div class="j_sketch">段落示意：蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。 蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。 蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
+                        </div>
+                    </div>
+                    <div class="j_process_img_box j_row">
+                        <div class="j_process_head_img j_col">
+                            <img src="images/touxiang.png">
+                            <div class="shengping">评</div>
+                            <!-- 小三角 -->
+                            <div class="sanjiao"></div>
+                        </div>
+                        <div class="j_process_info j_row">
+                            <span>林东东</span>
+                            <span>评审回复</span>
+                            <span>2017-10-01 18:00</span>
+                        </div>
+                    </div>
+                    <div class="j_process_content_box j_row">
+                        <!-- 左边竖线 -->
+                        <div class="j_left_line"></div>
+                        <div class="j_col">
+                            <div class="j_sketch">段落示意：蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。 蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。 蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
+                            </div>
+                            <div class="j_process_c_img j_row">
+                                <img src="images/test_img1.png" alt="">
+                                <img src="images/test_img1.png" alt="">
+                                <img src="images/test_img1.png" alt="">
+                                <img src="images/test_img1.png" alt="">
+                            </div>
+                        </div>
 
-						</div>
-						<div class="j_process_img_box j_row">
-							<div class="j_process_head_img j_col">
-								<img src="images/touxiang.png">
-								<div class="sanjiao"></div>
-							</div>
-							<div class="j_process_info j_row">
-								<span>林东东</span>
-								<span>商家回复</span>
-								<span>2017-10-01 18:00</span>
-							</div>
-						</div>
-						<div class="j_process_content_box j_row">
-							<div class="j_left_line"></div>
-							<div class="j_sketch">段落示意：蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
-								蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
-								蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
-							</div>
-						</div>
-						<div class="j_process_img_box j_row">
-							<div class="j_process_head_img j_col">
-								<img src="images/touxiang.png">
-								<div class="sanjiao"></div>
-							</div>
-							<div class="j_process_info j_row">
-								<span>质量投诉网</span>
-								<span>已联系商家</span>
-								<span>2017-10-01 18:00</span>
-							</div>
-						</div>
-						<div class="j_process_content_box j_row">
-							<div class="j_left_line"></div>
-							<div class="j_sketch">商家处理中。
-							</div>
-						</div>
-						<div class="j_process_img_box j_row">
-							<div class="j_process_head_img j_col">
-								<img src="images/touxiang.png">
-								<div class="sanjiao"></div>
-							</div>
-							<div class="j_process_info j_row">
-								<span>质量投诉网</span>
-								<span>已审核通过</span>
-								<span>2017-10-01 18:00</span>
-							</div>
-						</div>
-						<div class="j_process_content_box j_row">
-							<div class="j_left_line"></div>
-							<div class="j_sketch">正联系交付给商家。
-							</div>
-						</div>
-						<div class="j_process_img_box j_row">
-							<div class="j_process_head_img j_col">
-								<img src="images/touxiang.png">
-							</div>
-							<div class="j_process_info j_row">
-								<span>林东东</span>
-								<span>评审回复</span>
-								<span>2017-10-01 18:00</span>
-							</div>
-						</div>
-						<div class="j_process_content_box j_row" style="padding-left: 28px;">
-							<div class="j_col">
-								<div class="j_sketch">段落示意：蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
-									蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
-									蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
-								</div>
-								<div class="j_process_c_img j_row">
-									<img src="images/test_img1.png" alt="">
-									<img src="images/test_img1.png" alt="">
-									<img src="images/test_img1.png" alt="">
-									<img src="images/test_img1.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="j_support">
-							<button onclick="ding()">支持TA<img src="images/woshou.png"></button>
-						</div>
-						<div id="ding_img_list" class="j_process_img_list j_row">
-						
-						</div>
+                    </div>
+                    <div class="j_process_img_box j_row">
+                        <div class="j_process_head_img j_col">
+                            <img src="images/touxiang.png">
+                            <div class="sanjiao"></div>
+                        </div>
+                        <div class="j_process_info j_row">
+                            <span>林东东</span>
+                            <span>商家回复</span>
+                            <span>2017-10-01 18:00</span>
+                        </div>
+                    </div>
+                    <div class="j_process_content_box j_row">
+                        <div class="j_left_line"></div>
+                        <div class="j_sketch">段落示意：蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。 蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。 蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
+                        </div>
+                    </div>
+                    <div class="j_process_img_box j_row">
+                        <div class="j_process_head_img j_col">
+                            <img src="images/touxiang.png">
+                            <div class="sanjiao"></div>
+                        </div>
+                        <div class="j_process_info j_row">
+                            <span>质量投诉网</span>
+                            <span>已联系商家</span>
+                            <span>2017-10-01 18:00</span>
+                        </div>
+                    </div>
+                    <div class="j_process_content_box j_row">
+                        <div class="j_left_line"></div>
+                        <div class="j_sketch">商家处理中。
+                        </div>
+                    </div>
+                    <div class="j_process_img_box j_row">
+                        <div class="j_process_head_img j_col">
+                            <img src="images/touxiang.png">
+                            <div class="sanjiao"></div>
+                        </div>
+                        <div class="j_process_info j_row">
+                            <span>质量投诉网</span>
+                            <span>已审核通过</span>
+                            <span>2017-10-01 18:00</span>
+                        </div>
+                    </div>
+                    <div class="j_process_content_box j_row">
+                        <div class="j_left_line"></div>
+                        <div class="j_sketch">正联系交付给商家。
+                        </div>
+                    </div>
+                    <div class="j_process_img_box j_row">
+                        <div class="j_process_head_img j_col">
+                            <img src="images/touxiang.png">
+                        </div>
+                        <div class="j_process_info j_row">
+                            <span>林东东</span>
+                            <span>评审回复</span>
+                            <span>2017-10-01 18:00</span>
+                        </div>
+                    </div>
+                    <div class="j_process_content_box j_row" style="padding-left: 28px;">
+                        <div class="j_col">
+                            <div class="j_sketch">段落示意：蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。 蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。 蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
+                            </div>
+                            <div class="j_process_c_img j_row">
+                                <img src="images/test_img1.png" alt="">
+                                <img src="images/test_img1.png" alt="">
+                                <img src="images/test_img1.png" alt="">
+                                <img src="images/test_img1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="j_support">
+                        <button onclick="ding()">支持TA<img src="images/woshou.png"></button>
+                    </div>
+                    <div id="ding_img_list" class="j_process_img_list j_row">
 
-					</div>
-				</div>
-				<div class="j_right">
-					<button class="j_right_btn">
+                    </div>
+
+                </div>
+            </div>
+            <div class="j_right">
+                <button class="j_right_btn">
 						<img src="images/comment.png">
 						我要咨询
 					</button>
-					<button class="j_right_btn">
+                <button class="j_right_btn">
 						<img src="images/camera.png">
 						我要曝光
 					</button>
-					<button class="j_right_btn" style="background-color: #B0B0B0;">
+                <button class="j_right_btn" style="background-color: #B0B0B0;">
 						<img src="images/list.png">
 						我的咨询/投诉单
 					</button>
 
-					<span class="j_right_list_title">本周曝光最多</span>
-					<div class="j_right_list">
-						<div class="j_right_item j_row">
-							<div><img src="images/test_icon.png"><span>英国金融</span></div>
-							<div class="j_right_num j_right_num1">1</div>
-						</div>
-						<div class="j_right_item j_row">
-							<div><img src="images/test_icon.png"><span>英国金融</span></div>
-							<div class="j_right_num j_right_num2">2</div>
-						</div>
-						<div class="j_right_item j_row">
-							<div><img src="images/test_icon.png"><span>英国金融</span></div>
-							<div class="j_right_num j_right_num3">3</div>
-						</div>
-						<div class="j_right_item j_row">
-							<div><img src="images/test_icon.png"><span>英国金融</span></div>
-							<div class="j_right_num ">4</div>
-						</div>
-						<div class="j_right_item j_row">
-							<div><img src="images/test_icon.png"><span>英国金融</span></div>
-							<div class="j_right_num ">5</div>
-						</div>
-						<div class="j_right_item j_row">
-							<div><img src="images/test_icon.png"><span>英国金融</span></div>
-							<div class="j_right_num ">6</div>
-						</div>
-						<div class="j_right_item j_row">
-							<div><img src="images/test_icon.png"><span>英国金融</span></div>
-							<div class="j_right_num ">7</div>
-						</div>
-						<div class="j_right_item j_row">
-							<div><img src="images/test_icon.png"><span>英国金融</span></div>
-							<div class="j_right_num ">8</div>
-						</div>
-						<div class="j_right_item j_row">
-							<div><img src="images/test_icon.png"><span>英国金融</span></div>
-							<div class="j_right_num ">9</div>
-						</div>
-						<div class="j_right_item j_row">
-							<div><img src="images/test_icon.png"><span>英国金融</span></div>
-							<div class="j_right_num ">10</div>
-						</div>
-					</div>
-					<div class="j_right_tabs">
-						<div class="j_row">
-							<span>上一篇</span><span>1天前</span>
-						</div>
-						<div>NEV永利资管崩盘倒计时！本金很难退出</div>
-					</div>
-					<div class="j_right_tabs">
-						<div class="j_row">
-							<span>下一篇</span><span>20小时前</span>
-						</div>
-						<div>NEV永利资管崩盘倒计时！本金很难退出</div>
-					</div>
+                <span class="j_right_list_title">本周曝光最多</span>
+                <div class="j_right_list">
+                    <div class="j_right_item j_row">
+                        <div><img src="images/test_icon.png"><span>英国金融</span></div>
+                        <div class="j_right_num j_right_num1">1</div>
+                    </div>
+                    <div class="j_right_item j_row">
+                        <div><img src="images/test_icon.png"><span>英国金融</span></div>
+                        <div class="j_right_num j_right_num2">2</div>
+                    </div>
+                    <div class="j_right_item j_row">
+                        <div><img src="images/test_icon.png"><span>英国金融</span></div>
+                        <div class="j_right_num j_right_num3">3</div>
+                    </div>
+                    <div class="j_right_item j_row">
+                        <div><img src="images/test_icon.png"><span>英国金融</span></div>
+                        <div class="j_right_num ">4</div>
+                    </div>
+                    <div class="j_right_item j_row">
+                        <div><img src="images/test_icon.png"><span>英国金融</span></div>
+                        <div class="j_right_num ">5</div>
+                    </div>
+                    <div class="j_right_item j_row">
+                        <div><img src="images/test_icon.png"><span>英国金融</span></div>
+                        <div class="j_right_num ">6</div>
+                    </div>
+                    <div class="j_right_item j_row">
+                        <div><img src="images/test_icon.png"><span>英国金融</span></div>
+                        <div class="j_right_num ">7</div>
+                    </div>
+                    <div class="j_right_item j_row">
+                        <div><img src="images/test_icon.png"><span>英国金融</span></div>
+                        <div class="j_right_num ">8</div>
+                    </div>
+                    <div class="j_right_item j_row">
+                        <div><img src="images/test_icon.png"><span>英国金融</span></div>
+                        <div class="j_right_num ">9</div>
+                    </div>
+                    <div class="j_right_item j_row">
+                        <div><img src="images/test_icon.png"><span>英国金融</span></div>
+                        <div class="j_right_num ">10</div>
+                    </div>
+                </div>
+                <div class="j_right_tabs">
+                    <div class="j_row">
+                        <span>上一篇</span><span>1天前</span>
+                    </div>
+                    <div>NEV永利资管崩盘倒计时！本金很难退出</div>
+                </div>
+                <div class="j_right_tabs">
+                    <div class="j_row">
+                        <span>下一篇</span><span>20小时前</span>
+                    </div>
+                    <div>NEV永利资管崩盘倒计时！本金很难退出</div>
+                </div>
 
-				</div>
-			</div>
-			<div class="j_bottom_article">
-				<span class="j_bottom_title">相关文章</span>
-				<div class="j_bottom_item">
-					<p class="j_bot_p1">
-						<span>无法出金</span>
-						<img src="images/test_icon2.png">
-						<span>美联金融</span>
-						<span style="font-size: 16px;">蚂蚁金服我要求珍爱网线下服务平台退款</span>
-					</p>
-					<p class="j_bot_p2">
-						段落示意：蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
-						蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
-						蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态
-					</p>
-					<p class="j_bot_p3">
-						<img src="images/touxiang.png">
-						<span>林东东</span>
-						<span>2017-10-01 18:00</span>
-					</p>
-					<p class="j_bot_p4">
-						<span><span><img  class="shoucang_img" src="images/sc_star.png" ></span><span>156</span></span>
-						<span><span class="glyphicon glyphicon-comment"></span><span>2</span></span>
-					</p>
-				</div>
-				<div class="j_bottom_item">
-					<p class="j_bot_p1">
-						<span>诱导/欺诈</span>
-						<img src="images/test_icon2.png">
-						<span>美联金融</span>
-						<span style="font-size: 16px;">蚂蚁金服我要求珍爱网线下服务平台退款</span>
-					</p>
-					<p class="j_bot_p2">
-						段落示意：蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
-						蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
-						蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态
-					</p>
-					<p class="j_bot_p3">
-						<img src="images/touxiang.png">
-						<span>林东东</span>
-						<span>2017-10-01 18:00</span>
-					</p>
-					<p class="j_bot_p4">
-						<span><span><img class="shoucang_img" src="images/sc_star.png" ></span><span>156</span></span>
-						<span><span class="glyphicon glyphicon-comment"></span><span>2</span></span>
-					</p>
-				</div>
-				<div class="j_bottom_item">
-					<p class="j_bot_p1">
-						<span>无法出金</span>
-						<img src="images/test_icon2.png">
-						<span>美联金融</span>
-						<span style="font-size: 16px;">蚂蚁金服我要求珍爱网线下服务平台退款</span>
-					</p>
-					<p class="j_bot_p2">
-						段落示意：蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
-						蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。
-						蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态
-					</p>
-					<p class="j_bot_p3">
-						<img src="images/touxiang.png">
-						<span>林东东</span>
-						<span>2017-10-01 18:00</span>
-					</p>
-					<p class="j_bot_p4">
-						<span><span><img class="shoucang_img" src="images/sc_star.png" ></span><span>156</span></span>
-						<span><span class="glyphicon glyphicon-comment"></span><span>2</span></span>
-					</p>
-				</div>
-			</div>
-			<div class="j_bottom_article">
-				<span class="j_bottom_title">评论</span>
+            </div>
+        </div>
+        <div class="j_bottom_article">
+            <span class="j_bottom_title">相关文章</span>
+            <div class="j_bottom_item">
+                <p class="j_bot_p1">
+                    <span>无法出金</span>
+                    <img src="images/test_icon2.png">
+                    <span>美联金融</span>
+                    <span style="font-size: 16px;">蚂蚁金服我要求珍爱网线下服务平台退款</span>
+                </p>
+                <p class="j_bot_p2">
+                    段落示意：蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。 蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。 蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态
+                </p>
+                <p class="j_bot_p3">
+                    <img src="images/touxiang.png">
+                    <span>林东东</span>
+                    <span>2017-10-01 18:00</span>
+                </p>
+                <p class="j_bot_p4">
+                    <span><span><img  class="shoucang_img" src="images/sc_star.png" ></span><span>156</span></span>
+                    <span><span class="glyphicon glyphicon-comment"></span><span>2</span></span>
+                </p>
+            </div>
+            <div class="j_bottom_item">
+                <p class="j_bot_p1">
+                    <span>诱导/欺诈</span>
+                    <img src="images/test_icon2.png">
+                    <span>美联金融</span>
+                    <span style="font-size: 16px;">蚂蚁金服我要求珍爱网线下服务平台退款</span>
+                </p>
+                <p class="j_bot_p2">
+                    段落示意：蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。 蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。 蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态
+                </p>
+                <p class="j_bot_p3">
+                    <img src="images/touxiang.png">
+                    <span>林东东</span>
+                    <span>2017-10-01 18:00</span>
+                </p>
+                <p class="j_bot_p4">
+                    <span><span><img class="shoucang_img" src="images/sc_star.png" ></span><span>156</span></span>
+                    <span><span class="glyphicon glyphicon-comment"></span><span>2</span></span>
+                </p>
+            </div>
+            <div class="j_bottom_item">
+                <p class="j_bot_p1">
+                    <span>无法出金</span>
+                    <img src="images/test_icon2.png">
+                    <span>美联金融</span>
+                    <span style="font-size: 16px;">蚂蚁金服我要求珍爱网线下服务平台退款</span>
+                </p>
+                <p class="j_bot_p2">
+                    段落示意：蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。 蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态，提供跨越设计与开发的体验解决方案。 蚂蚁金服设计平台design.alipay.com，用最小的工作量，无缝接入蚂蚁金服生态
+                </p>
+                <p class="j_bot_p3">
+                    <img src="images/touxiang.png">
+                    <span>林东东</span>
+                    <span>2017-10-01 18:00</span>
+                </p>
+                <p class="j_bot_p4">
+                    <span><span><img class="shoucang_img" src="images/sc_star.png" ></span><span>156</span></span>
+                    <span><span class="glyphicon glyphicon-comment"></span><span>2</span></span>
+                </p>
+            </div>
+        </div>
+        <div class="j_bottom_article" style="width: 782px;">
+            <span class="j_bottom_title">评论</span>
+            <!-- 新增 -->
+            <div class="q_yhdp">
+                <div class="q_yhdp_type q_row">
+                    <span class="q_yhdp_type_item q_yhdp_active" data-type="0">全部（1234)</span>
+                    <span class="q_yhdp_type_item" data-type="1">最新（1234)</span>
 
-			</div>
+                </div>
 
-		</div>
-		<div id="outerdiv" style="position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);z-index:2;width:100%;height:100%;display:none;">
-			<div id="innerdiv" style="position:absolute;">
-				<img id="bigimg" style="border:5px solid #fff;" src="" />
-			</div>
-		</div>
-		<script src="style/MiniDialog-es5.min.js"></script>
-		<script src="style/cases.js"></script>
-		
-	</body>
+                <div class="q_pinglun_box" id="q_pl_item_html">
+
+                </div>
+                <div class="pages">
+
+                </div>
+                <div class="q_tijiao_box">
+
+                    <div class="q_row">
+                        <div class="q_tijiao_title">点评：</div>
+                        <div class="q_tijiao_right">
+                            <div class="qq">
+                                <p>企业的发展离不开您宝贵的建议，请留下您的最真实的评论！</p>
+                                <div class="message q_tj_msh" contentEditable='true'></div>
+                                <div class="But">
+                                    <img src="images/emojis/bba_thumb.gif" class='bq' />
+                                    <img src="images/icons/ico_hf_picture.png" onclick="up_imgs(2)" class='bq2' />
+                                    <input type="file" style="display: none;" id="q_th_img" onchange="q_tj_imgs(this)" value="" />
+                                    <span class='submit' onclick="q_tj_pl()">发表</span>
+                                    <div class="img_sp img_sp2">
+
+                                    </div>
+                                    <!--face begin-->
+                                    <div class="face">
+                                        <ul>
+                                            <li><img src="images/emojis/smilea_thumb.gif" title="呵呵]"></li>
+                                            <li><img src="images/emojis/tootha_thumb.gif" title="嘻嘻]"></li>
+                                            <li><img src="images/emojis/laugh.gif" title="[哈哈]"></li>
+                                            <li><img src="images/emojis/tza_thumb.gif" title="[可爱]"></li>
+                                            <li><img src="images/emojis/kl_thumb.gif" title="[可怜]"></li>
+                                            <li><img src="images/emojis/kbsa_thumb.gif" title="[挖鼻屎]"></li>
+                                            <li><img src="images/emojis/cj_thumb.gif" title="[吃惊]"></li>
+                                            <li><img src="images/emojis/shamea_thumb.gif" title="[害羞]"></li>
+                                            <li><img src="images/emojis/zy_thumb.gif" title="[挤眼]"></li>
+                                            <li><img src="images/emojis/bz_thumb.gif" title="[闭嘴]"></li>
+                                            <li><img src="images/emojis/bs2_thumb.gif" title="[鄙视]"></li>
+                                            <li><img src="images/emojis/lovea_thumb.gif" title="[爱你]"></li>
+                                            <li><img src="images/emojis/sada_thumb.gif" title="[泪]"></li>
+                                            <li><img src="images/emojis/heia_thumb.gif" title="[偷笑]"></li>
+                                            <li><img src="images/emojis/qq_thumb.gif" title="[亲亲]"></li>
+                                            <li><img src="images/emojis/sb_thumb.gif" title="[生病]"></li>
+                                            <li><img src="images/emojis/mb_thumb.gif" title="[太开心]"></li>
+                                            <li><img src="images/emojis/ldln_thumb.gif" title="[懒得理你]"></li>
+                                            <li><img src="images/emojis/yhh_thumb.gif" title="[右哼哼]"></li>
+                                            <li><img src="images/emojis/zhh_thumb.gif" title="[左哼哼]"></li>
+                                            <li><img src="images/emojis/x_thumb.gif" title="[嘘]"></li>
+                                            <li><img src="images/emojis/cry.gif" title="[衰]"></li>
+                                            <li><img src="images/emojis/wq_thumb.gif" title="[委屈]"></li>
+                                            <li><img src="images/emojis/t_thumb.gif" title="[吐]"></li>
+                                            <li><img src="images/emojis/k_thumb.gif" title="[打哈气]"></li>
+                                            <li><img src="images/emojis/bba_thumb.gif" title="[抱抱]"></li>
+                                            <li><img src="images/emojis/angrya_thumb.gif" title="[怒]"></li>
+                                            <li><img src="images/emojis/yw_thumb.gif" title="[疑问]"></li>
+                                            <li><img src="images/emojis/cza_thumb.gif" title="[馋嘴]"></li>
+                                            <li><img src="images/emojis/88_thumb.gif" title="[拜拜]"></li>
+                                            <li><img src="images/emojis/sk_thumb.gif" title="[思考]"></li>
+                                            <li><img src="images/emojis/sweata_thumb.gif" title="[汗]"></li>
+                                            <li><img src="images/emojis/sleepya_thumb.gif" title="[困]"></li>
+                                            <li><img src="images/emojis/sleepa_thumb.gif" title="[睡觉]"></li>
+                                            <li><img src="images/emojis/money_thumb.gif" title="[钱]"></li>
+                                            <li><img src="images/emojis/sw_thumb.gif" title="[失望]"></li>
+                                            <li><img src="images/emojis/cool_thumb.gif" title="[酷]"></li>
+                                            <li><img src="images/emojis/hsa_thumb.gif" title="[花心]"></li>
+                                            <li><img src="images/emojis/hatea_thumb.gif" title="[哼]"></li>
+                                            <li><img src="images/emojis/gza_thumb.gif" title="[鼓掌]"></li>
+                                            <li><img src="images/emojis/dizzya_thumb.gif" title="[晕]"></li>
+                                            <li><img src="images/emojis/bs_thumb.gif" title="[悲伤]"></li>
+
+                                        </ul>
+                                    </div>
+                                    <!--face end-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 展示大图 -->
+    <div id="outerdiv" style="position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);z-index:9999999;width:100%;height:100%;display:none;">
+        <div id="innerdiv" style="position:absolute;">
+            <img id="bigimg" style="border:5px solid #fff;" src="" />
+        </div>
+    </div>
+
+
+
+    <script src="style/q_index.js"></script>
+    <script src="style/d_jquery.page.js"></script>
+    <script src="style/MiniDialog-es5.min.js"></script>
+    <script src="style/cases.js"></script>
+    <script>
+        $('.circlechart').circlechart(); // Initialization
+        $(".tcdPageCode").createPage({
+            pageCount: 10,
+            current: 1,
+            backFn: function(p) {
+                console.log(p);
+            }
+        });
+
+        function q_huifu_img(e) {
+            var _this = $(e); //将当前的pimg元素作为_this传入函数
+            imgShow("#outerdiv", "#innerdiv", "#bigimg", _this);
+        }
+    </script>
+    <script src="style/q_ui/Chart.min.js"></script>
+
+</body>
+
 </html>

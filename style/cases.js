@@ -1,4 +1,4 @@
-var api_address = "http://fin110.com";
+var api_address = "http://fin110.cc";
 var article_id = 13;
 
 $(function() {
